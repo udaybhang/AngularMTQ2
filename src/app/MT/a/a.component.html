@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 7px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        width: 150px;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <form>
+            <label for="val">Enter Value in A </label>
+            <input type="text" ngModel id="val" name="val" #val placeholder="Enter number..">
+
+        </form>
+        <button type="button" class="button button1" value="Click" (click)="getVal(val.value)"> Click to Send</button>
+
+    </div>
+
+</body>
+
+</html>
